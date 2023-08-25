@@ -38,7 +38,7 @@ class _ZigZagState extends State<ZigZag> {
           height: 400,
           width: 250,
           decoration: const BoxDecoration(
-            color: Colors.red,
+            color: Colors.white,
             boxShadow: [
               BoxShadow(
                 color: Colors.black,
@@ -59,6 +59,7 @@ class ZigzagClip extends CustomClipper<Path> {
     const double zigzagWidth = 20.0;
     const double zigzagHeight = 20.0;
 
+    path.moveTo(0, zigzagHeight);
     path.lineTo(0, size.height);
     double x = 0.0;
     double y = size.height;
@@ -76,7 +77,10 @@ class ZigzagClip extends CustomClipper<Path> {
       isEven = !isEven;
     }
     path.lineTo(size.width, size.height);
-    path.lineTo(size.width, 0);
+    path.lineTo(size.width, zigzagHeight);
+    path.quadraticBezierTo(size.width, 0, size.width - zigzagWidth, 0);
+    path.lineTo(zigzagWidth, 0);
+    path.quadraticBezierTo(0, 0, 0, zigzagHeight);
     path.close();
     return path;
   }
