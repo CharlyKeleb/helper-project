@@ -30,61 +30,19 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage>
-    with SingleTickerProviderStateMixin {
-  late AnimationController controller;
-  late Animation<Color?> animation;
-
-  @override
-  void initState() {
-    super.initState();
-    controller = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 3),
-      reverseDuration: const Duration(seconds: 3),
-    );
-
-    animation = ColorTween(
-      begin: Colors.red,
-      end: Colors.blue,
-    ).animate(controller);
-
-    animation.addStatusListener((status) {
-      if (status == AnimationStatus.completed) {
-        controller.reverse();
-      } else if (status == AnimationStatus.dismissed) {
-        controller.forward();
-      }
-      setState(() {});
-    });
-    controller.forward();
-  }
-
+class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          color: animation.value,
-        ),
-      ),
-      bottomNavigationBar: Container(
-        height: 100,
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            FloatingActionButton(
-              onPressed: () => controller.reverse(),
-              tooltip: 'Decrement',
-              child: const Icon(Icons.arrow_back),
-            ),
-            FloatingActionButton(
-              onPressed: () => controller.forward(),
-              tooltip: 'Increment',
-              child: const Icon(Icons.arrow_forward),
-            ),
-          ],
+        child: TweenAnimationBuilder(
+          tween: Tween<double>(begin: 10, end: 100),
+          duration: const Duration(seconds: 5),
+          builder: (context, value, child) => Container(
+            color: Colors.red,
+            width: value,
+            height: value,
+          ),
         ),
       ),
     );
