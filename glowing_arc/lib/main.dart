@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+import 'package:flutter/services.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -32,13 +34,49 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: SizedBox(
-          height: 300,
-          width: 300,
-          child: CustomPaint(
-            painter: ArcPainter(),
+    return AnnotatedRegion(
+      value: const SystemUiOverlayStyle(statusBarColor: Colors.yellow),
+      child: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 300,
+                width: 300,
+                child: CustomPaint(
+                  painter: ArcPainter(),
+                ),
+              ),
+              SizedBox(
+                height: 300,
+                width: 300,
+                child: Builder(builder: (context) {
+                  double percentage = 100;
+                  return Stack(
+                    children: [
+                      Positioned.fill(
+                        child: CustomPaint(
+                          painter: PercentagePainter(
+                            percentage: percentage,
+                          ),
+                        ),
+                      ),
+                      Align(
+                        alignment: const Alignment(0, 0.3),
+                        child: Text(
+                          '${percentage.toInt()}',
+                          style: const TextStyle(
+                            fontSize: 50,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ],
+                  );
+                }),
+              ),
+            ],
           ),
         ),
       ),
@@ -110,4 +148,43 @@ class ArcPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+}
+
+class PercentagePainter extends CustomPainter {
+  final double percentage;
+  PercentagePainter({this.percentage = 50});
+  @override
+  void paint(Canvas canvas, Size size) {
+    var frontColoredPaint = Paint();
+    frontColoredPaint.style = PaintingStyle.stroke;
+    frontColoredPaint.strokeCap = StrokeCap.round;
+    frontColoredPaint.strokeWidth = 10;
+
+    double start = 160;
+
+    canvas.drawArc(
+      Rect.fromCenter(
+        center: Offset(size.width / 2, size.height / 2),
+        width: size.width,
+        height: size.height,
+      ),
+      start.toRadians(),
+      (220 * (percentage / 100)).toRadians(),
+      false,
+      frontColoredPaint,
+    );
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+}
+
+extension NumToRadians on num {
+  double toRadians() {
+    return toDouble() * (math.pi / 180.0);
+  }
+
+  double toDegree() {
+    return toDouble() * (180 / math.pi);
+  }
 }

@@ -33,10 +33,12 @@ class _ZigZagState extends State<ZigZag> {
   Widget build(BuildContext context) {
     return Center(
       child: ClipPath(
-        clipper: ZigzagClip(),
+        clipper: ZigzagClip(
+          width: 30,
+        ),
         child: Container(
           height: 400,
-          width: 250,
+          width: 300,
           decoration: const BoxDecoration(
             color: Colors.white,
             boxShadow: [
@@ -53,34 +55,29 @@ class _ZigZagState extends State<ZigZag> {
 }
 
 class ZigzagClip extends CustomClipper<Path> {
+  final int width;
+  ZigzagClip({this.width = 20});
   @override
   Path getClip(Size size) {
     var path = Path();
-    const double zigzagWidth = 20.0;
-    const double zigzagHeight = 20.0;
+    const double offset = 40.0;
 
-    path.moveTo(0, zigzagHeight);
+    path.moveTo(0, offset);
     path.lineTo(0, size.height);
     double x = 0.0;
-    double y = size.height;
 
-    bool isEven = true;
-    while (x < size.width) {
-      x += zigzagWidth;
-      if (isEven) {
-        y -= zigzagHeight;
-        path.lineTo(x, y);
+    for (int i = 0; i <= size.width / width; i++) {
+      x += width;
+      if (i.isEven) {
+        path.lineTo(x, size.height - width);
       } else {
-        y += zigzagHeight;
-        path.lineTo(x, y);
+        path.lineTo(x, size.height);
       }
-      isEven = !isEven;
     }
-    path.lineTo(size.width, size.height);
-    path.lineTo(size.width, zigzagHeight);
-    path.quadraticBezierTo(size.width, 0, size.width - zigzagWidth, 0);
-    path.lineTo(zigzagWidth, 0);
-    path.quadraticBezierTo(0, 0, 0, zigzagHeight);
+    path.lineTo(size.width, offset);
+    path.quadraticBezierTo(size.width, 0, size.width - offset, 0);
+    path.lineTo(offset, 0);
+    path.quadraticBezierTo(0, 0, 0, offset);
     path.close();
     return path;
   }
