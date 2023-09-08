@@ -52,7 +52,7 @@ class _TableExampleState extends State<TableExample> {
                     Align(
                       alignment: Alignment.centerLeft,
                       child: GestureDetector(
-                        onTap: () {
+                        onLongPress: () {
                           showDialog(
                             context: context,
                             builder: (context) => BackdropFilter(
