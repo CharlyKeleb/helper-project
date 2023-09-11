@@ -1,360 +1,150 @@
-import 'dart:math';
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:tests/provider.dart';
 
 void main() {
-  runApp(const TableExampleApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
-/// A sample application that utilizes the TableView API.
-class TableExampleApp extends StatelessWidget {
-  /// Creates an instance of the TableView example app.
-  const TableExampleApp({super.key});
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Table Example',
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
-      home: const TableExample(),
+    return const MaterialApp(
+      home: TestApp(),
     );
   }
 }
 
-class TableExample extends StatefulWidget {
-  const TableExample({super.key});
+class TestApp extends ConsumerStatefulWidget {
+  const TestApp({super.key});
 
   @override
-  State<TableExample> createState() => _TableExampleState();
+  ConsumerState<TestApp> createState() => _TestAppState();
 }
 
-class _TableExampleState extends State<TableExample> {
+class _TestAppState extends ConsumerState<TestApp> {
+  var group = 'any';
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-        designSize: const Size(390, 844),
-        builder: (context, child) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('iPhone long press'),
-            ),
-            body: Center(
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: GestureDetector(
-                        onLongPress: () {
-                          showDialog(
-                            context: context,
-                            builder: (context) => BackdropFilter(
-                              filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-                              child: Padding(
-                                padding: const EdgeInsets.only(
-                                  left: 20,
-                                ),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Material(
-                                      color: Colors.transparent,
-                                      child: Container(
-                                        decoration: ShapeDecoration(
-                                          color: Colors.black,
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(100),
-                                          ),
-                                        ),
-                                        padding: const EdgeInsets.symmetric(
-                                          vertical: 8,
-                                          horizontal: 15,
-                                        ),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            const Text(
-                                              '👍',
-                                              style: TextStyle(fontSize: 30),
-                                            )
-                                                .animate()
-                                                .fade(duration: 110.ms)
-                                                .scale(delay: 110.ms),
-                                            10.horizontalSpace,
-                                            const Text(
-                                              '❤️',
-                                              style: TextStyle(fontSize: 30),
-                                            )
-                                                .animate()
-                                                .fade(duration: 120.ms)
-                                                .scale(delay: 120.ms),
-                                            10.horizontalSpace,
-                                            const Text(
-                                              '😂',
-                                              style: TextStyle(fontSize: 30),
-                                            )
-                                                .animate()
-                                                .fade(duration: 130.ms)
-                                                .scale(delay: 130.ms),
-                                            10.horizontalSpace,
-                                            const Text(
-                                              '😮',
-                                              style: TextStyle(fontSize: 30),
-                                            )
-                                                .animate()
-                                                .fade(duration: 140.ms)
-                                                .scale(delay: 140.ms),
-                                            10.horizontalSpace,
-                                            const Text(
-                                              '😢',
-                                              style: TextStyle(fontSize: 30),
-                                            )
-                                                .animate()
-                                                .fade(duration: 150.ms)
-                                                .scale(delay: 150.ms),
-                                            10.horizontalSpace,
-                                            const Text(
-                                              '🙏',
-                                              style: TextStyle(fontSize: 30),
-                                            )
-                                                .animate()
-                                                .fade(duration: 160.ms)
-                                                .scale(delay: 160.ms),
-                                            10.horizontalSpace,
-                                            const CircleAvatar(
-                                              radius: 18,
-                                              child: Icon(
-                                                Icons.add,
-                                              ),
-                                            )
-                                                .animate()
-                                                .fade(duration: 170.ms)
-                                                .scale(delay: 170.ms)
-                                          ],
-                                        ),
-                                      )
-                                          .animate()
-                                          .fade(duration: 100.ms)
-                                          .scale(delay: 100.ms),
-                                    ),
-                                    5.verticalSpace,
-                                    const Card(
-                                      child: Padding(
-                                        padding: EdgeInsets.symmetric(
-                                            horizontal: 15, vertical: 8),
-                                        child: Text(
-                                          'An Example',
-                                        ),
-                                      ),
-                                    ),
-                                    5.verticalSpace,
-                                    Material(
-                                      color: Colors.transparent,
-                                      child: Container(
-                                        width: 250,
-                                        decoration: ShapeDecoration(
-                                          color: Colors.black,
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(20),
-                                          ),
-                                        ),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            const Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: 15, vertical: 8),
-                                              child: Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Text(
-                                                    'Star',
-                                                    style: TextStyle(
-                                                      color: Colors.white,
-                                                    ),
-                                                  ),
-                                                  Icon(
-                                                    Icons.star_border,
-                                                    color: Colors.white,
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                            const Divider(
-                                              height: 0,
-                                              thickness: 0.5,
-                                            ),
-                                            const Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: 15, vertical: 8),
-                                              child: Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Text(
-                                                    'Reply',
-                                                    style: TextStyle(
-                                                      color: Colors.white,
-                                                    ),
-                                                  ),
-                                                  Icon(
-                                                    Icons.reply,
-                                                    color: Colors.white,
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                            const Divider(
-                                              height: 0,
-                                              thickness: 0.5,
-                                            ),
-                                            Padding(
-                                              padding:
-                                                  const EdgeInsets.symmetric(
-                                                horizontal: 15,
-                                                vertical: 8,
-                                              ),
-                                              child: Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  const Text(
-                                                    'Forward',
-                                                    style: TextStyle(
-                                                      color: Colors.white,
-                                                    ),
-                                                  ),
-                                                  Transform(
-                                                    alignment: Alignment.center,
-                                                    transform:
-                                                        Matrix4.rotationY(pi),
-                                                    child: const Icon(
-                                                      Icons.reply,
-                                                      color: Colors.white,
-                                                    ),
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                            const Divider(
-                                              height: 0,
-                                              thickness: 0.5,
-                                            ),
-                                            const Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: 15, vertical: 8),
-                                              child: Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Text(
-                                                    'Copy',
-                                                    style: TextStyle(
-                                                      color: Colors.white,
-                                                    ),
-                                                  ),
-                                                  Icon(
-                                                    Icons.copy,
-                                                    color: Colors.white,
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                            const Divider(
-                                              height: 0,
-                                              thickness: 0.5,
-                                            ),
-                                            const Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: 15, vertical: 8),
-                                              child: Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Text(
-                                                    'Report',
-                                                    style: TextStyle(
-                                                      color: Colors.white,
-                                                    ),
-                                                  ),
-                                                  Icon(
-                                                    Icons.warning,
-                                                    color: Colors.white,
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                            const Divider(
-                                              height: 0,
-                                              thickness: 0.5,
-                                            ),
-                                            const Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: 15, vertical: 8),
-                                              child: Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Text(
-                                                    'Delete',
-                                                    style: TextStyle(
-                                                      color: Colors.red,
-                                                    ),
-                                                  ),
-                                                  Icon(
-                                                    Icons.delete,
-                                                    color: Colors.red,
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    )
-                                        .animate()
-                                        .fade(duration: 160.ms)
-                                        .scale(delay: 160.ms)
-                                  ],
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                        child: const Card(
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 15, vertical: 8),
-                            child: Text(
-                              'An Example',
-                            ),
-                          ),
+    var jokes = ref.watch(jokeProvider(group));
+
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          RadioListTile(
+            value: 'any',
+            title: const Text('Female'),
+            groupValue: group,
+            onChanged: (val) {
+              setState(() {
+                group = val!;
+              });
+            },
+          ),
+          RadioListTile(
+            value: 'christmas',
+            title: const Text('Male'),
+            groupValue: group,
+            onChanged: (val) {
+              setState(() {
+                group = val!;
+              });
+            },
+          ),
+          RadioListTile(
+            value: 'programming',
+            title: const Text('Programming'),
+            groupValue: group,
+            onChanged: (val) {
+              setState(() {
+                group = val!;
+              });
+            },
+          ),
+          RadioListTile(
+            value: 'spooky',
+            title: const Text('Spooky'),
+            groupValue: group,
+            onChanged: (val) {
+              setState(() {
+                group = val!;
+              });
+            },
+          ),
+          RadioListTile(
+            value: 'pun',
+            title: const Text('Pun'),
+            groupValue: group,
+            onChanged: (val) {
+              setState(() {
+                group = val!;
+              });
+            },
+          ),
+          RadioListTile(
+            value: 'dark',
+            title: const Text('Dark'),
+            groupValue: group,
+            onChanged: (val) {
+              setState(() {
+                group = val!;
+              });
+            },
+          ),
+          const SizedBox(
+            height: 80,
+          ),
+          jokes.when(
+            skipLoadingOnRefresh: false,
+            data: (value) {
+              if (value.error == false) {
+                return Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      if (value.type == 'single')
+                        Text(
+                          value.joke!,
+                          textAlign: TextAlign.center,
+                        )
+                      else ...[
+                        Text(
+                          value.setup!,
+                          textAlign: TextAlign.center,
                         ),
-                      ),
-                    )
-                  ],
-                ),
-              ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Text(value.delivery!),
+                      ]
+                    ],
+                  ),
+                );
+              }
+              return const Text('There is an error');
+            },
+            error: (error, trace) => const Text('There was an Error'),
+            loading: () => const Center(
+              child: CircularProgressIndicator(),
             ),
-          );
-        });
+          ),
+          const SizedBox(
+            height: 80,
+          ),
+          ElevatedButton(
+            onPressed: () => ref.invalidate(jokeProvider),
+            child: const Text("Reload"),
+          )
+        ],
+      ),
+    );
   }
 }
