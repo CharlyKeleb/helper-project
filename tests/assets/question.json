@@ -15,7 +15,7 @@
             "Agụmagụ ugbua na agụmagụ odinala",
             "Agụmagụ onwe na agụmagụ obodo"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Agụmagụ izugbe bụkwa ...",
@@ -51,7 +51,7 @@
             "Nhazi, agụmagụ, nzipụta ndụ, akụkọ",
             "Abụ, akụkọ, ejije, nghọta"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abughi uru agụmagụ",
@@ -69,7 +69,7 @@
             "Ekere uche, nkeasụsụ",
             "Ngalaba, Ụdị"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ ụdị agụmagụ dị ọkpụ?",
@@ -114,7 +114,7 @@
             "Eji ya echekwaba asụsụ na omenala ndi Igbo",
             "Eji ya anọrị oge"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ndị a bụ ngalaba agụmagụ ọdịnala",
@@ -150,7 +150,7 @@
             "Akụkọ Ifo",
             "Akụkọ ndị odogwu"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ụdị akụkọ eji egwu na ngwa egwu akọ bụ",
@@ -168,7 +168,7 @@
             "Ịlụ a na-atụ ụbọchị ụka",
             "Akụkọ buru ibu"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Nkenuudi akụkọ Odinala Igbo gụnyere",
@@ -213,7 +213,7 @@
             "Ejije mmụọ ma mmadụ",
             "Ejije ndị dị ndụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ejije agha bụ ụdị ejije eji egosi",
@@ -240,7 +240,7 @@
             "Ejije ihe mere eme",
             "Ejije ndị ọzọ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ụdị abụ ọdịnala gụnyere",
@@ -258,7 +258,7 @@
             "Uri egwu, egwu Chukwu,  egwu ndi okenye, egwu mmemmé",
             "Egwu ọgbụgba, egwu Chukwu, egwu mmemme"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Abụ na-abata n'akụkọ ifo bụ",
@@ -294,7 +294,7 @@
             "Iteghete",
             "Anọ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ụdị abụ eji akatọ akparamagwa ọjọọ, mpi na arụrala dị iche iche n'obodo",
@@ -375,7 +375,7 @@
             "Abụ eji efe ndị nna nna anyị",
             "Abụ eji efufe aka"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ụdị abụ a na-etinye uche n'ihe dị iche iche Chukwu kere",
@@ -384,7 +384,7 @@
             "Abụ Chineke",
             "Abụ ihe okike"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Abụ ntọaja bụkwa",
@@ -411,7 +411,7 @@
             "Agụmagụ akwụkwọ",
             "Agụmagụ izugbe"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a bụ njirimara agụmagụ ederede",
@@ -438,7 +438,7 @@
             "Ọ buru ibu",
             "Ọ dịghị mma"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị uru agụmagụ ederede",
@@ -474,7 +474,7 @@
             "Iduuazị egwu, iduuazị ihe omimi, iduuazị ncheta",
             "Iduuazị ngalaba, iduuazị ọyị, Iduuazị agha"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị njirimara Iduuazị ederede",
@@ -492,7 +492,7 @@
             "Iduuazị",
             "Agụmagụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ụdị ejije ederede gụnyere",
@@ -510,7 +510,7 @@
             "Abụ nwa, abụ ntọala, abụ ọrụ",
             "Abụ akụkọ, abụ akụkọala, abụ nwa"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedu nke abụghị njirimara abụ ederede",
@@ -528,7 +528,7 @@
             "Asinilu",
             "Ukabuilu"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Okwu dị omimi eji akọwa ihe dị oke mkpa bụ",
@@ -546,7 +546,7 @@
             "Asinilu",
             "Agwụgwa"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Gwa m ihe mere eze jiri rachaa ntụ. Ube",
@@ -609,7 +609,7 @@
             "Ilu",
             "Ha nile"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ajụjụ nzaghachi bụ",
@@ -645,7 +645,7 @@
             "Amaghị ka ọ bụ ya ka ọ bụghị ya",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ọmụmatụ atụmatụ okwu 'Nkwuma' bụ",
@@ -672,7 +672,7 @@
             "Isii",
             "Asatọ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị mmewere agụmagụ igbo",
@@ -681,7 +681,7 @@
             "Asụsụ",
             "Ntọala"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Mmewere agụmagụ ndị ọzọ na-agbado ukwu na...",
@@ -699,7 +699,7 @@
             "Asụsụ",
             "Nhazi"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Enwere ụdị ntọala atọ na mmewere agụmagụ, ha bụ.",
@@ -726,7 +726,7 @@
             "Mmadụ ịkpa agwa adịghị mma",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Nsirihụ na mmewere agụmagụ bụ",
@@ -780,7 +780,7 @@
             "ebumnuche odee, isiokwu ya, agwa na akparamagwa, nhazi, emereme, aka nka na asụsụ ya",
             "Ọ dịghị nke ọ bụ."
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Onye nnyocha agụmagụ bu?",
@@ -833,7 +833,7 @@
             "Otu",
             "Abụọ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Usoro nnyocha agụmagụ gụnyere",
@@ -869,7 +869,7 @@
             "Ogo nkọwami",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "N'usoro nnyocha agụmagụ, ọrụ asụsụ n'eziputa na agụmagụ gụnyere ndị a ewepu otu",
@@ -878,7 +878,7 @@
             "Eji ya akọwa agwa",
             "O na-enye aka eziputa olu dị n'agụmagụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "N'usoro nnyocha agụmagụ, Brockett (1974:34) ziputara akparamagwa n'ogo ndị a ewepu",
@@ -896,7 +896,7 @@
             "Agwa ndagharị",
             "Agwa nzọpụta"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ onye kọwara omenala dika \"etu ndị si eme ihe ha\"?",
@@ -914,7 +914,7 @@
             "Njirimara",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị njirimara omenala",
@@ -950,7 +950,7 @@
             "Linton (1945:4)",
             "Taylor (1970:40)"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Agbụrụ atọ kacha pụta ihe n'ala anyị Naijiria gụnyere ndị a ewepu...",
@@ -968,7 +968,7 @@
             "Eji ya akọwaputa ndị ahụ na-asụ igbo dika asụsụ ha",
             "Ejikwa ya eziputa asụsụ ahụ na onwe ya"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Okammuta bu Michael Onwuejeogu kọwara na ndụ ndị Igbo bidoro na nwoke a na-akpọ?",
@@ -1066,7 +1066,7 @@
             "Nneochie",
             "Nwanekunwa"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị na-enye aka izụlite ụmụaka nke na-enye n'imu nwa bụ",
@@ -1084,7 +1084,7 @@
             "Ndị agbataobi",
             "Nne na Nna"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ etu nwanekunwa si enye aka n'izulite ụmụaka",
@@ -1093,7 +1093,7 @@
             "Ọ na-akuziri ụmụaka n'ihe gbasara ọrụ aka",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ndị nkụzi na-enye aka n'izulite ụmụaka dị ụzọ abụọ, ha bụ",
@@ -1155,7 +1155,7 @@
             "Ndi otu ọgbọ",
             "Nwanekunwa"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": ".... bu ihe niile ndị Igbo yịnyere /na etinye n'ahụ nke gụnyere Akwa/uwe, ọla aka, ọla ntị, ihe olu, ude dgz",
@@ -1182,7 +1182,7 @@
             "Njirimara",
             "Nkwenye"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ụdị ejiji enwere dị",
@@ -1208,7 +1208,7 @@
             "Ejiji",
             "Ejiji kpuchiri ahụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Uru ezigbo ejiji gụnyere ndị a ewepu",
@@ -1235,7 +1235,7 @@
             "Enweghị nghota gbasara ogogo Chineke debere mmadụ",
             "awamanya"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Oke ǹnomi agburyu ndị ọcha na enweghị afọ ojuju bụ ihe ndị na-akpalite",
@@ -1253,7 +1253,7 @@
             "Akọmọọnu",
             "Mmadụ itufu njirimara ya"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a esoghi na ndị ọ dịrị ịbelata oghom na nsogbu dị na ajọ ejiji",
@@ -1271,7 +1271,7 @@
             "Ịhọta na Chineke debere mmadụ na ogo dị nnukwu elu karịsịa ihe ndị ọzọ ọ kere",
             "Ịnwe mmasị na iji omenaala na nkwenye ndị Igbo kpọrọ ihe"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ ndị ọ dịrị imebe iwu megidere ajọ ejiji ma gosiputakwa ntaramahụhụ dịrị onye dara ya bu iwu?",
@@ -1289,7 +1289,7 @@
             "Ọla aka",
             "Ọla ntị"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Isi agụmagụ a nke bu \"Ejiji ndị Igbo\" si n'aka",
@@ -1334,7 +1334,7 @@
             "Ụdị ezinaụlo ọ si pụta",
             "Akaọrụ ya"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ihe ndị a ka nwanyị ga-eme ka ọ chọta dị",
@@ -1352,7 +1352,7 @@
             "Okwu mbụ nwanyị",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Omenala a na-eme iji gwa umunna na-alụrụla nwa ha nwaanyị bu?",
@@ -1415,7 +1415,7 @@
             "Ịlụ nwata nwanyị mgbe ọ bụ nwata",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Nhachi nwaanyị na adị ire n'ezinụlọ",
@@ -1442,7 +1442,7 @@
             "Nkuchi nwaanyị",
             "Ịkpọnye nwaanyị"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ihe ndị a dị nnukwu mkpa na a ga-emerịrị tupu nwoke na nwaanyị alụọ di na nwunye ewepu",
@@ -1496,7 +1496,7 @@
             "Ụtụtụ",
             "Ehihie"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ oge ọrụ jị eje ọrụ?",
@@ -1514,7 +1514,7 @@
             "Ọ jụọ ndị ọzọ",
             "Ịle mmadụ anya n'ihu"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ oge abalị/uchichi ji ebido n'igu oge nke ụbọchị",
@@ -1541,7 +1541,7 @@
             "Ụbọchị isii dị na ya",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ nke bụ isi na ahịa anọ ndị Igbo nwere",
@@ -1577,7 +1577,7 @@
             "Isii",
             "Asatọ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "N'ịgụ oge ndị Igbo, ebe ha gbadoro ụkwụ were na-agụ afọ bụ",
@@ -1604,7 +1604,7 @@
             "Mmemme uhiejiọkụ",
             "Igba ọfala"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị uru ịgụ oge bara",
@@ -1631,7 +1631,7 @@
             "Ajọ omume",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị arụ dị n'ala Igbo",
@@ -1658,7 +1658,7 @@
             "Ịyọ mgbaghara",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ndị a bụ arụ dị n'ala Igbo ewepu otu",
@@ -1676,7 +1676,7 @@
             "Ndị okenye",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ nke abụghị nsọala n'ala Igbo",
@@ -1694,7 +1694,7 @@
             "Ịme ka mmadụ sọpụrụ ibe",
             "Ka udo dị"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Egwuregwu nke a na-egwu mgbe ọnwa na-eti n’abali ka a na-akpọ?",
@@ -1712,7 +1712,7 @@
             "Ịtụ okwe",
             "Ịchụ ọsọ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ oge eji egwu egwu ọnwa?",
@@ -1748,7 +1748,7 @@
             "Iza ụlọ",
             "Ịmụ nwa"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Umunwoke na umunwaanyị nọrọkọta ọnụ n'egwu ọnwa ha na-eme ihe ndị a ewepu",
@@ -1775,7 +1775,7 @@
             "Esi na ya amụta ezigbo akparamagwa",
             "Esi na ya amụta ezi obibi ndụ nke ezinaụlọ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Gịnị nọchiri anya egwu ọnwa na oge ugbua?",
@@ -1802,7 +1802,7 @@
             "I gote ya ebe o buru ibu",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Anaghị ekwu nke a ma ọ bụrụ na ọjị adịghị",
@@ -1811,7 +1811,7 @@
             "Ka m jide gị ụgwọ ọjị",
             "Abalị ewerela ọjị"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị ihe e nwere ike iji chee ọjị ma ọ bụrụ na ọjị adịghị",
@@ -1829,7 +1829,7 @@
             "Obi ọma",
             "Ihu ọma"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ihe izizi eji anabata onye ọbịa bụ",
@@ -1865,7 +1865,7 @@
             "Onye ọbịa",
             "Nwata"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ndị Igbo sịrị na \"onye okenye jiri ọjị n'aka kwaa 'ehem', ndị mmụọ....",
@@ -1901,7 +1901,7 @@
             "Nwoke",
             "Onye chiri echichi"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ọjị agbaghị ibe ọbụla ka a na-akpọ",
@@ -1946,7 +1946,7 @@
             "N'ebe ụfọdụ, anaghị eche oji n'abalị",
             "Nwaanyị anaghị awa ọjị ebe nwoke nọ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị ihe eji ọjị eme",
@@ -1973,7 +1973,7 @@
             "Ọbịa nwere ego na ọbịa enweghị ego",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ihe mbụ a na-emere onye ọbịa bụ",
@@ -1991,7 +1991,7 @@
             "Ịgbasapụ ihu kelee ya",
             "Inye ya ọjị"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Onye ọbịa ịkwụ ọtọ na be mmadụ na-ebutere onye ọbịara na nke ya",
@@ -2027,7 +2027,7 @@
             "Ile ọbịa na-eme ka ọrụ dị mfe n'ezinaụlọ",
             "Ụfọdụ na-esikwa n'ile ọbịa nweta ihu ọma n'ihe gbasara alụmalụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Inye onye ọbịa ọjị na-egosi",
@@ -2062,7 +2062,7 @@
             "Ichụ aja",
             "Ịnye ofufe"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ndị Igbo na-akpọ Chukwu \"Chineke\" iji gosi na",
@@ -2080,7 +2080,7 @@
             "Ọ kesịrị ụwa ma na-echekwa ụwa",
             "Onye onyinye"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ndị Igbo na-akpọ Chukwu \"olisaebuuwa\" iji gosi na",
@@ -2125,7 +2125,7 @@
             "Dị omimi  nke gosiri na onweghị onye nwere ike ịkọwa ụdị ya",
             "Bụ ezigbo Chi"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "A na-akpọ Chukwu \"Amaama amasị amasị\" maka na ọ",
@@ -2188,7 +2188,7 @@
             "Ọnwụbiko",
             "Ọnwụraa"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị nkwenye ndị Igbo gbasara ọnwụ",
@@ -2206,7 +2206,7 @@
             "Onye ọbụla ga-enwe",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ndị Igbo kwenyere na mkpụrụ obi mmadụ na-amalite njem mgbe",
@@ -2268,7 +2268,7 @@
             "Ọnwụ ndịichie",
             "Ozu olili"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a esoghi na ụdị ọnwụ atọ enwere n'ala Igbo",
@@ -2304,7 +2304,7 @@
             "Ndị nwụrụ anwụ mana ha ka dị ndụ, ha ka bikwa n'etiti ohaneze, ha na ndị ezinaụlọ ha ka na-enwekwa mmekọrịta",
             "Ndị nna nna anyị ha nwụrụ anwụ, naanị ndị bichara ezigbo ndụ n'ụwa ma nwụkwaa ezigbo ọnwụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ụdị ndịichie abụọ enwere n'ala Igbo bụ",
@@ -2340,7 +2340,7 @@
             "Okpesi",
             "Okwute"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ndị nwere ezinaụlọ, bie ezigbo ndụ mana ha enweghị ike ichi echichi dị elu tupu ha a laa mmụọ bụ",
@@ -2367,7 +2367,7 @@
             "Mgbe ọbụla a chọrọ ịṅụ mmanya, a na-ebu ụzọ tapụrụ ha n'ala",
             "Anaghị akwafu mmiri n'iro n'abalị maọbu zapụ aja n'iro na-ebughi ụzọ mee mkpọtụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ụzọ ndị dị ndụ si enye ndịichie ugwu na nsọpụrụ",
@@ -2385,7 +2385,7 @@
             "Nrịanrịa",
             "Ihe isike"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ezi mmekọrịta dị n'etiti ndịichie na ndị dị ndụ na-eweta ihe ndị a ewepu",
@@ -2403,7 +2403,7 @@
             "Ndị etinyere n'ili",
             "Ndị okenye nwụrụ mana elibeghị ha"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ihe eji ama ndị okenye bụ",
@@ -2448,7 +2448,7 @@
             "Ụmụnna, ogbe, ọchịchị obodo",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị njirimara ọchịchị ndị chi mere eze",
@@ -2511,7 +2511,7 @@
             "Ọfọ (ọchịchị) anaghị apụ apụ",
             "Ha enweghị nlụkọrịta"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Njirimara ọchịchị ogbe gụnyere ndị a ewepu",
@@ -2529,7 +2529,7 @@
             "Ụmụnna",
             "Ọ dịghị nke ọ bụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ nke abụghị ọrụ ogbe",
@@ -2565,7 +2565,7 @@
             "Esi na ya amata ebumnobi ndị mmụọ maọbu ndị nwụrụ anwụ",
             "Ọ na-ewepụrụ ndị Igbo mgbagwoju anya, nchekasi na nwute na-esite na nsogbu na-abiara ha na ndụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ nke enweghị ike ime ka je hụ dibịa afa",
@@ -2592,7 +2592,7 @@
             "Jị",
             "Mmanya ọkụ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị ihe mere mmadụ ga-eji hụ dibịa afa",
@@ -2628,7 +2628,7 @@
             "Mkpụrụ afa",
             "Ọkụkọ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ego a ga-enye dibịa afa ka a na-akpọ",
@@ -2646,7 +2646,7 @@
             "Afa ugegbe",
             "Afa aja uzuzu"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ nke abụghị ngwa orụ eji agba afa",
@@ -2655,7 +2655,7 @@
             "Ose ọjị",
             "Ọjị"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ndị a bụ uru ịgba afa ewepu",
@@ -2682,7 +2682,7 @@
             "Ezinaụlọ otu mkpuke",
             "Ezinaụlọ mbasa"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Ezinaụlọ nwoke lụrụ nanị otu nwaanyị bụ",
@@ -2718,7 +2718,7 @@
             "Ilekọta dị ya na ụmụ ya anya",
             "Inye ụmụaka ezigbo nkuzi"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Oke na ọrụ dịrị ụmụaka n'ezinaụlọ bụ ndị a ewepu",
@@ -2754,7 +2754,7 @@
             "Ndị iyom",
             "Ụmụaka"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Mmemme a na-eme tupu erie ji n'ala Igbo bụ",
@@ -2781,7 +2781,7 @@
             "Ji",
             "Ofe Akwụkwọ"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Esi na akpụ eweta nri ndị a ewepu",
@@ -2809,7 +2809,7 @@
             "Oge nne onye mụrụ nwa ji elekọta nwa ya nwaanyị na nwa ọ mụrụ ọhụrụ anya rukwaa mgbe ha gbasiri ike",
             "Oge nwoke nwunye ya mụrụ nwa ji ekele nwunye ya maka ihe isi ike ọgabigara mgbe ọ dị ime"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Onye na-ele omụgwọ bụ",
@@ -2853,7 +2853,7 @@
             "Egbene",
             "Mkpụrụ ọjị"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ oge eji ebi nwa ugwu",
@@ -2888,7 +2888,7 @@
             "Maka o nweghị ego",
             "Isi adịsịghị ya mma"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị ụzọ esi enyere onye ọrịa aka",
@@ -2960,7 +2960,7 @@
             "A kwụrụ ọtọ",
             "A ghọrọ akanri"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Otu n'ime ndị a abụghị mkpa arusi na-egboro ụmụnna maọbu obodo",
@@ -2996,7 +2996,7 @@
             "A gaghị asịrị ha asị",
             "Ibu ụzọ kelee ha"
         ],
-        "answer": "optionCHColor"
+        "answer": "optionCColor"
     },
     {
         "question": "Kedụ onye a na-enye ofufe na nsọpụrụ dịrị nna?",
