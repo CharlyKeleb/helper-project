@@ -32,51 +32,83 @@ class TestApp extends StatefulWidget {
   State<TestApp> createState() => _TestAppState();
 }
 
+class Info {
+  String first;
+  String second;
+
+  Info({
+    required this.first,
+    required this.second,
+  });
+}
+
 class _TestAppState extends State<TestApp> {
+  List<Info> data = [];
+  TextEditingController first = TextEditingController();
+  TextEditingController second = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+      body: Column(
         children: [
-          Container(
-            // color: Colors.red,
-            height: MediaQuery.sizeOf(context).height,
-          ),
-          ClipPath(
-            clipper: CurvedPath(),
-            child: Container(
-              color: const Color.fromARGB(255, 26, 51, 104),
-              height: MediaQuery.sizeOf(context).height * 0.6,
+          150.verticalSpace,
+          for (int i = data.length; i >= 0; i--)
+            Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: first,
+                    readOnly: i < data.length,
+                    decoration: InputDecoration(
+                      hintText: i < data.length ? data[i].first : '',
+                      border: const OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                20.horizontalSpace,
+                Expanded(
+                  child: TextField(
+                    controller: second,
+                    decoration: InputDecoration(
+                      labelText: i < data.length ? data[i].second : '',
+                      border: const OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
+          TextButton(
+            onPressed: () {
+              print(first.text);
+              print(second.text);
+              data.add(Info(first: first.text, second: second.text));
+
+              first.clear();
+              second.clear();
+              setState(() {});
+            },
+            child: const Text('Fetch'),
           ),
+          ...data
+              .map((e) => Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(e.first),
+                      Text(e.second),
+                    ],
+                  ))
+              .toList()
         ],
       ),
     );
   }
-}
-
-class CurvedPath extends CustomClipper<Path> {
-  @override
-  Path getClip(Size size) {
-    var path = Path();
-    double offset = 60;
-    path.moveTo(size.width, size.height);
-    path.lineTo(size.width, 0);
-    path.lineTo(0, 0);
-    path.lineTo(0, size.height - (offset * 2));
-    path.quadraticBezierTo(
-        0, size.height - offset, offset, size.height - offset);
-    path.lineTo(size.width - offset, size.height - offset);
-    path.quadraticBezierTo(
-      size.width,
-      size.height - offset,
-      size.width,
-      size.height,
-    );
-    path.close();
-    return path;
-  }
-
-  @override
-  bool shouldReclip(covariant CustomClipper<Path> oldClipper) => true;
 }
